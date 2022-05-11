@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+<title>Calculator</title>
+
+<script language="Javascript">
+
+var n1,n2;
+
+function add()
+
+{
+
+ n1=parseInt(document.form1.t1.value);
+
+ n2=parseInt(document.form1.t2.value);
+
+ document.form1.t3.value=n1+n2;
+
+ alert("Selected operation is Addition");
+
+}
+
+function sub()
+
+{
+
+ n1=parseInt(document.form1.t1.value);
+
+ n2=parseInt(document.form1.t2.value);
+
+ document.form1.t3.value=n1-n2;
+
+ alert("Selected operation is Subtraction");
+
+}
+
+function mul()
+
+{
+
+ n1=parseInt(document.form1.t1.value);
+
+ n2=parseInt(document.form1.t2.value);
+
+ document.form1.t3.value=n1*n2;
+
+ alert("Selected operation is Multiplication");
+
+}
+
+function div()
+
+{
+
+ n1=parseInt(document.form1.t1.value);
+
+ n2=parseInt(document.form1.t2.value);
+
+ document.form1.t3.value=n1/n2;
+
+ alert("Selected operation is Division");
+
+}
+
+</script>
+
+</head>
+
+<body bgcolor="white">
+
+<form name="form1">
+
+<h2><center><font color="black">Simple Calculator</font></center></h2>
+
+<table cellspacing=20 align="center" bgcolor="grey">
+
+<tr>
+
+<td>Enter First Value:</td>
+
+<td><input type="text" id="t1"></td>
+
+</tr>
+
+<tr>
+
+<td>Enter Second Value:</td>
+
+<td><input type="text" id="t2"></td>
+
+</tr> 
+
+<tr>
+
+<td>Result:</td>
+
+<td><input type="text" id="t3"></td>
+
+</tr>
+
+<tr>
+
+ <td><input type="button" id="ad" value="+" onClick="add()"/>
+
+ <input type="button" id="su" value="-" onClick="sub()"/>
+
+ <input type="button" id="mu" value="*" onClick="mul()"/>
+
+ <input type="button" id="di" value="/" onClick="div()"/>
+
+ <input type="reset" id="re" value="Clear"/>
+
+ </td>
+
+</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
+
+                   
